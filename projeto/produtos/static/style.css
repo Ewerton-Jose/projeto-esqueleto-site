@@ -1,0 +1,16 @@
+header{
+    background-color: rgba(161, 149, 149, 0.849);
+}
+
+.prod {
+    background-color: rgba(76, 79, 90, 0.24);
+    margin: auto;
+    max-width: 800px;
+};
+
+.button {
+    background-color: rgba(96, 39, 255, 0.397);
+    size: 20px;
+    cursor: pointer;
+}
+
