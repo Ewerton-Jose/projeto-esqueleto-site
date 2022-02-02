@@ -1,16 +1,53 @@
+:root {
+    --cor1:#236899;
+    --cor2:#6EC2FF;
+    --cor3:#87CDFF;
+    --cor4:#B37B29;
+    --cor5:#FFC46E;
+}
+
+
+* {
+    margin: 0px;
+}
+
+body{
+    background-color: var(--cor3);
+}
+
 header{
-    background-color: rgba(161, 149, 149, 0.849);
+    background-color: var(--cor1);
+    font-size: 25px;
+    color: var(--cor4);
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.753);
+    padding-bottom: 20px;
+}
+
+main > h2 {
+    text-align: center;
 }
 
 .prod {
     background-color: rgba(76, 79, 90, 0.24);
-    margin: auto;
-    max-width: 800px;
-};
-
-.button {
-    background-color: rgba(96, 39, 255, 0.397);
-    size: 20px;
-    cursor: pointer;
+    
+    max-width: 400px;
+    margin-bottom: 20px
 }
 
+.butao{
+    background-color: rgba(97, 39, 255, 0.281);
+    size: 20px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+footer{
+    color: var(--cor4);
+    font-size: 12px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.192);
+}
