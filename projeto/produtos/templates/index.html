@@ -14,33 +14,17 @@
     <main>
         <h2>Produtos a venda</h2>
         <ul>
+            {% for prod in produtos %}
             <li>
                 <div class="prod">
-                    <p>Foto 1: </p>
-                    <p>Nome 1: </p>
-                    <p>quantidade 1: </p>
-                    <p>descrição 1: </p>
-                    <span class='butao'>comprar</span>
+                    <p><img src="{{prod.urlP}}" alt="{{prod.nomeP}}"></p>
+                    <p>nome: {{prod.nomeP}}</p>
+                    <p>quantidade: {{prod.qunati}}</p>
+                    <p>descrição: {{prod.descP}}</p>
+                    <a href="/produto/{{prod.id}}"><span class='butao'>comprar</span></a>
                 </div>
             </li>
-            <li>
-                <div class="prod">
-                    <p>Foto 2: </p>
-                    <p>Nome 2: </p>
-                    <p>quantidade 2: </p>
-                    <p>descrição 2: </p>
-                    <span class='butao'>comprar</span>
-                </div>
-            </li>
-            <li>
-                <div class="prod">
-                    <p>Foto 3: </p>
-                    <p>Nome 3: </p>
-                    <p>quantidade 3: </p>
-                    <p>descrição 3: </p>
-                    <span class='butao'>comprar</span>
-                </div>
-            </li>
+            {% endfor %}
         </ul>
 
     </main>
